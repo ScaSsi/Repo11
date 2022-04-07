@@ -1,6 +1,6 @@
 var str = "Paragon!";
 function myReverse(str) {
-    var reverse = ""
+    var reverse = "";
     for(var i=str.length-1; i>=0; i--) {
         reverse += str[i];
     }

@@ -3,7 +3,7 @@ function myMutation(arr) {
     for(var i=0; i<temp.length; i++) {
         if(!arr[0].toLowerCase().includes(temp[i])) return false;
     }
-    return true
+    return true;
 }
 console.log(myMutation(["hello", "hey"]))
 console.log(myMutation(["hello", "Hello"]))

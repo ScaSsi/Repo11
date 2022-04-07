@@ -1,6 +1,12 @@
 function mySplice(arr1, arr2, n) {
-    arr2.splice(n, 0, ...arr1.reverse());
-    return arr2;
+    var arrNew = [];
+    arrNew.push(...arr2);
+    var reverse = [];
+    reverse.push(...arr1)
+    arrNew.splice(n, 0, ...reverse.reverse());
+    //console.log(arr1);
+    //console.log(arr2);
+    return arrNew;
 }
 
 console.log(mySplice([1, 2, 3], [4, 5], 1));
